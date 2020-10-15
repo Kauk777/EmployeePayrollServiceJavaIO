@@ -9,18 +9,16 @@ public class EmployeePayrollService {
 		CONSOLE_IO, FILE_IO, DB_IO, REST_IO
 	}
 
-	private List<EmployeePayrollData> employeePayrollList = new ArrayList<>();;
+	private List<EmployeePayrollData> employeePayrollList;
 
 	public EmployeePayrollService() {
 		employeePayrollList = new ArrayList<>();
 	}
 
-	/*
-	 * public EmployeePayrollService(List<EmployeePayrollData> employeePayrollList)
-	 * { employeePayrollList=new ArrayList<>();
-	 * 
-	 * }
-	 */
+	public EmployeePayrollService(List<EmployeePayrollData> employeePayrollList) {
+		employeePayrollList = new ArrayList<>();
+
+	}
 
 	public static void main(String[] args) {
 		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
